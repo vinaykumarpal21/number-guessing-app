@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-content-wrapper">
+        <div class="game-card">
+            <h1>Number <span>Guessing</span></h1>
+            <p class="subtitle">I'm thinking of a number between 1 and 100. Can you guess it?</p>
+
+            <div class="input-group">
+                <input type="number" id="userGuess" placeholder="Enter a number (1-100)" min="1" max="100" aria-label="Your guess">
+                <button id="guessBtn" class="guess-btn">Guess</button>
+            </div>
+
+            <div class="message-box" id="messageBox" aria-live="polite">The game has started! Enter your first guess.</div>
+
+            <div class="stats">
+                <p>Attempts: <span id="attempts">0</span></p>
+            </div>
+
+            <button id="resetBtn" class="reset-btn" hidden>Play Again</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
